@@ -1,0 +1,8 @@
+.card-post{
+    width: 50%;
+}
+@media(max-width:800px){
+    .card-post{
+        width: 100%;
+    }
+}
