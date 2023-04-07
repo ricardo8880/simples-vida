@@ -1,8 +1,43 @@
-.card-post{
+.card-post {
     width: 50%;
 }
-@media(max-width:800px){
-    .card-post{
+
+@media(max-width:800px) {
+    .card-post {
         width: 100%;
+    }
+}
+
+@media(max-width:800px) {
+    .img-post {
+        width: 100%;
+    }
+
+    .img-post img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .icons-post {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+}
+
+@media(min-width: 800px) {
+    .img-post img {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media(max-width:800px) {
+
+    .tempo-navegacao,
+    .simplebook,
+    .redes-sociais {
+        display: none;
     }
 }
