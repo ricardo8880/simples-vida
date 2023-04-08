@@ -2,10 +2,12 @@
 
 <div class="card-post" style="margin:auto">
     <div class="reacoes-post">
-        <p class="img-post">
-            <a href=""><img src="img/img-example.jpg" class="card-img-top" alt="..."></a>
-
-        </p>
+        <div class="img-post">
+            <a href="">
+                <img src="img/img-example.jpg" class="card-img-top" alt="...">
+            </a>
+            <p>How to make simple card hover effect in 2022. Very easy Card hover effect for beginners</p>
+        </div>
         <div class="icons-post m-2">
             <p>
                 <ion-icon name="heart-outline" title="Gostei"></ion-icon>
@@ -41,16 +43,20 @@
                 <ion-icon name="arrow-redo-circle-outline"></ion-icon>
             </a></h5>
     </div>
+    <hr class="hr-poster">
 </div>
-<hr style="width:60%; margin: auto;">
+
 <br>
 <!----------------------------------------------------------------------------------------------------->
 <div class="card-post" style="margin:auto">
     <div class="reacoes-post">
-        <p class="img-post">
-            <a href=""><img src="img/img-example2.png" class="card-img-top" alt="..."></a>
-
-        </p>
+        <div class="img-post">
+            <a href="">
+                <img src="img/img-example2.png" class="card-img-top" alt="...">
+            </a>
+            <p>Apenas será permitido 85 caracteres</p>
+            <p>se for menor que 30 caracteres fazer isso</p>
+        </div>
         <div class="icons-post m-2">
             <p>
                 <ion-icon name="heart-outline" title="Gostei"></ion-icon>
@@ -67,7 +73,6 @@
             <p>
                 <ion-icon name="arrow-redo-outline" title="Compartilhar"></ion-icon>
             </p>
-
         </div>
     </div>
     <div class="card-body">
@@ -87,8 +92,11 @@
                 <ion-icon name="arrow-redo-circle-outline"></ion-icon>
             </a></h5>
     </div>
+    <hr class="hr-poster">
 </div>
-<hr style="width:60%; margin: auto;">
+
+<br>
+
 <br>
 
 

@@ -21,6 +21,10 @@ Route::get('/radmin', function () {
     return view('/radmin');
 });
 
-Route::get('/poster', function(){
+Route::get('/poster', function () {
     return view('post');
+});
+
+Route::get('/galeria', function () {
+    return view('gallery');
 });

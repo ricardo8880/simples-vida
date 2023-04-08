@@ -38,6 +38,16 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="/lightbox2/dist/js/lightbox.min.js"></script>
+
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+</script>
+<!--https://www.youtube.com/watch?v=Z2q9ErH2-bI-->
+
 </body>
 
 </html>
