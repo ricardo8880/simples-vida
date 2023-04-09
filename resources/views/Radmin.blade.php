@@ -1,22 +1,44 @@
 @include('header')
+<?php session_start(); ?>
+<div class="p-2">
+    <!--Mensagem de sucesso se o post for cadastrado-->
+    <?php if (!empty($_SESSION['msg-cadastro-post'])) : ?>
+        <div class="alert alert-success mb-5 text-center">
+            <?= $_SESSION['msg-cadastro-post'];
+            unset($_SESSION['msg-cadastro-post']); ?>
+        </div>
+    <?php endif ?>
 
-<form class="col-6 m-auto">
-    <h1 class="display-4">Adicione Seu Post</h1>
-    <p>
-        <input type="file" class="form-control">
-    </p>
-    <p>
-        <input type="text" class="form-control" placeholder="titulo">
-    </p>
-    <p>
-        <input type="text" class="form-control" placeholder="descricao">
-    </p>
-    <p>
-        <textarea class="w-100 form-control" name="" id="" rows="5" placeholder="Alguma ideia sua pode mudar sua vida..."></textarea>
-    </p>
- 
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <!--Mensagem de erro caso a extensão não seja a desejada-->
+    <?php if (!empty($_SESSION['msg-extensao'])) : ?>
+        <div class="alert alert-danger mb-5 text-center">
+            <?= $_SESSION['msg-extensao'];
+            unset($_SESSION['msg-extensao']); ?>
+        </div>
+    <?php endif ?>
+
+
+
+    <p class="text-end container"><a href="" class="btn btn-warning">Ver post</a></p>
+    <form action="pegar-dados-post" enctype="multipart/form-data" method="POST" class="col-lg-6 m-auto">
+        @csrf
+        <h1 class="display-4">Adicione Seu Post</h1>
+        <p>
+            <input type="file" class="form-control" name="post_image" required>
+        </p>
+        <p>
+            <input type="text" class="form-control" placeholder="titulo" name="post_title" required>
+        </p>
+        <p>
+            <input type="text" class="form-control" placeholder="descricao" name="post_description" required>
+        </p>
+        <p>
+            <textarea class="w-100 form-control" id="" rows="5" placeholder="Alguma ideia sua pode mudar sua vida..." name="post_message" required></textarea>
+        </p>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 <br>
 
 

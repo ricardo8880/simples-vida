@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\postercontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,14 +18,17 @@ Route::get('/', function () {
     return view('/index');
 });
 
-Route::get('/radmin', function () {
-    return view('/radmin');
-});
+Route::post('/pegar-dados-post', [postercontroller::class, 'pegarDadosPost']);
 
-Route::get('/poster', function () {
-    return view('post');
+
+Route::post('/posteres', function () {
+    return view('posteres');
 });
 
 Route::get('/galeria', function () {
     return view('gallery');
+});
+
+Route::get('/radmin', function () {
+    return view('/radmin');
 });
