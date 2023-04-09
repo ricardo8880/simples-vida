@@ -3,7 +3,7 @@
 <div id="body-gallery">
 
 
-    <h1 style="font-size: 25px;" class="text-center pt-5">MINHA GALERIA DE COISAS ALEATÓRIAS DA MINHA VIDA</h1>
+    <h1 style="font-size: 25px;" class="text-center pt-5">MINHA GALERIA</h1>
 
 
     <div class="gallery contain">

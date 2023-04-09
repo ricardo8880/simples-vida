@@ -15,14 +15,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('/index');
+    return view('index');
 });
 
 Route::post('/pegar-dados-post', [postercontroller::class, 'pegarDadosPost']);
 
 
-Route::post('/posteres', function () {
-    return view('posteres');
+Route::get('/posteres', [postercontroller::class, 'pegarDadosPostBanco']);
+
+Route::get('post', function () {
+    return view('post');
 });
 
 Route::get('/galeria', function () {
@@ -30,5 +32,5 @@ Route::get('/galeria', function () {
 });
 
 Route::get('/radmin', function () {
-    return view('/radmin');
+    return view('radmin');
 });

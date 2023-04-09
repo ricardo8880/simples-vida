@@ -1,21 +1,19 @@
 @include('header')
-@foreach($Select_postagens as $postagem)
+
 <div class="card-post" style="margin:auto">
 
 
 
-    <div class="reacoes-post">
+    <div class="reacoes-post-unic">
 
 
 
-        <div class="img-post">
+        <div class="img-post img-post-unic">
             <a href="" style="text-decoration: none; color:white;">
-                <img src="img/{{$postagem->post_image}}" class="card-img-top" alt="...">
-                <p class="pt-3">{{Str::substr($postagem->post_title, 0, 85)}}... Ler mais</p>
+                <img src="img/banner-home-01.jpg" class="card-img-top" alt="...">
             </a>
         </div>
-
-        <div class="icons-post m-2">
+        <div class="icons-post mt-3" style="width:500px;">
             <p>
                 <ion-icon name="heart-outline" title="Gostei"></ion-icon>
             </p>
@@ -33,6 +31,7 @@
             </p>
         </div>
     </div>
+    <h1 class="p-3 h4">titulo</h1>
 
     <div class="card-body">
         <p>Curtido por
@@ -51,18 +50,11 @@
                 <ion-icon name="arrow-redo-circle-outline"></ion-icon>
             </a></h5>
     </div>
-    <hr class="hr-poster">
 
 
-
-    <?php
-    if (empty($Select_postagens)) {
-        echo "<h4 class='alert alert-warning'>Desculpe mas no momento não há postagens!</h4>";
-    }
-    ?>
 
 </div>
-@endforeach
+
 <br>
 
 

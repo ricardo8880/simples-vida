@@ -1,21 +1,23 @@
 @include('header')
-<?php session_start(); ?>
+
 <div class="p-2">
+    @if(!empty($productId))
+    {{dd($productId)}}
+    @endif
+
     <!--Mensagem de sucesso se o post for cadastrado-->
-    <?php if (!empty($_SESSION['msg-cadastro-post'])) : ?>
-        <div class="alert alert-success mb-5 text-center">
-            <?= $_SESSION['msg-cadastro-post'];
-            unset($_SESSION['msg-cadastro-post']); ?>
-        </div>
-    <?php endif ?>
+    @if (session()->has('msg-cadastro-post'))
+    <div class="alert alert-success mb-5 text-center">
+        {{ session('msg-cadastro-post') }}
+    </div>
+    @endif
 
     <!--Mensagem de erro caso a extensão não seja a desejada-->
-    <?php if (!empty($_SESSION['msg-extensao'])) : ?>
-        <div class="alert alert-danger mb-5 text-center">
-            <?= $_SESSION['msg-extensao'];
-            unset($_SESSION['msg-extensao']); ?>
-        </div>
-    <?php endif ?>
+    @if (session()->has('msg-extensao'))
+    <div class="alert alert-danger mb-5 text-center">
+        {{ session('msg-extensao') }}
+    </div>
+    @endif
 
 
 

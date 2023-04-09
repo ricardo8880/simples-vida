@@ -176,19 +176,13 @@ footer {
 }
 
 .card-post .card-body span {
-    font-weight: 500;
+    font-weight: 600;
 }
 
-.reacoes-post {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.reacoes-post p {
-    margin: 0;
-}
 
-.img-post {
+.img-post,
+.img-post-unic {
     background: black;
     text-align: center;
     border: solid thin transparent;
@@ -207,6 +201,12 @@ footer {
 }
 
 
+.img-post-unic:hover {
+    height: 500px;
+
+}
+
+
 
 
 
@@ -214,8 +214,23 @@ footer {
     object-fit: contain;
 }
 
+.reacoes-post-unic .icons-post {
+    display: flex;
+    justify-content: space-around;
+}
 
-.reacoes-post [name] {
+
+.reacoes-post {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reacoes-post p {
+    margin: 0;
+}
+
+.reacoes-post [name],
+.reacoes-post-unic [name] {
     background-color: aliceblue;
     padding: 5px;
     font-size: 30px;
