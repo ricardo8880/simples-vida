@@ -31,21 +31,17 @@ url('/img/banner-home-02.jpg'); height: 600px; background-size:cover; background
     <p class="text-center alert alert-warning"><strong>Postagens Mais recentes</strong> <i
             class="fa-solid fa-comment"></i></p>
 
-    <div class="card-home my-5 container m-auto row">
-        <div class="col-3 m-auto my-3"><a href="">
-                <p>dddddd</p>
-            </a></div>
-        <div class="col-3 m-auto my-3"><a href="">
-                <p>dddddd</p>
-            </a></div>
-        <div class="col-3 m-auto my-3"><a href="">
-                <p>dddddd</p>
-            </a></div>
-        <div class="col-3 m-auto my-3"><a href="">
-                <p>dddddd</p>
-            </a></div>
-    </div>
 
+    <div class="card-home container">
+        @foreach($postsHome as $post)
+        <div class="m-2" style="background-image: url('/img/card-home.jpg'); width: 250px; height: 250px;">
+            <a href="">
+                <p>dddddd</p>
+            </a>
+        </div>
+        @endforeach
+
+    </div>
 
 
     @include('footer')

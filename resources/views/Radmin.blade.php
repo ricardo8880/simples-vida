@@ -1,9 +1,9 @@
 @include('header')
 
 <div class="p-2">
-    @if(!empty($productId))
+    <!-- @if(!empty($productId))
     {{dd($productId)}}
-    @endif
+    @endif -->
 
     <!--Mensagem de sucesso se o post for cadastrado-->
     @if (session()->has('msg-cadastro-post'))
@@ -30,9 +30,6 @@
         </p>
         <p>
             <input type="text" class="form-control" placeholder="titulo" name="post_title" required>
-        </p>
-        <p>
-            <input type="text" class="form-control" placeholder="descricao" name="post_description" required>
         </p>
         <p>
             <textarea class="w-100 form-control" id="" rows="5" placeholder="Alguma ideia sua pode mudar sua vida..." name="post_message" required></textarea>

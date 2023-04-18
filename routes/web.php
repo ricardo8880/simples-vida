@@ -14,18 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [postercontroller::class, 'index']);
 
 Route::post('/pegar-dados-post', [postercontroller::class, 'pegarDadosPost']);
 
 
 Route::get('/posteres', [postercontroller::class, 'pegarDadosPostBanco']);
 
-Route::get('post', function () {
-    return view('post');
-});
+Route::get('/post/{id}', [postercontroller::class, 'pegarIDpost']);
 
 Route::get('/galeria', function () {
     return view('gallery');

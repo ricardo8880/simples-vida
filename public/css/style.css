@@ -61,28 +61,10 @@
 
 }
 
-.card-home div:nth-child(1) {
-    background-image: url('/img/card-home.jpg');
-    width: 250px;
-    height: 250px;
-}
-
-.card-home div:nth-child(2) {
-    background-image: url('/img/card-home.jpg');
-    width: 250px;
-    height: 250px;
-}
-
-.card-home div:nth-child(3) {
-    background-image: url('/img/card-home.jpg');
-    width: 250px;
-    height: 250px;
-}
-
-.card-home div:nth-child(4) {
-    background-image: url('/img/card-home.jpg');
-    width: 250px;
-    height: 250px;
+.card-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card-home div {

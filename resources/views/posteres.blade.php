@@ -9,7 +9,7 @@
 
 
         <div class="img-post">
-            <a href="" style="text-decoration: none; color:white;">
+            <a href="/post/{{$postagem->id}}" style="text-decoration: none; color:white;">
                 <img src="img/{{$postagem->post_image}}" class="card-img-top" alt="...">
                 <p class="pt-3">{{Str::substr($postagem->post_title, 0, 85)}}... Ler mais</p>
             </a>

@@ -1,17 +1,16 @@
 @include('header')
 
+
+@foreach($dadosPost as $post)
+
 <div class="card-post" style="margin:auto">
 
-
-
     <div class="reacoes-post-unic">
-
-
-
         <div class="img-post img-post-unic">
-            <a href="" style="text-decoration: none; color:white;">
-                <img src="img/banner-home-01.jpg" class="card-img-top" alt="...">
-            </a>
+
+
+            <img src="/img_post/{{$post->post_image}}" class="card-img-top" alt="...">
+
         </div>
         <div class="icons-post mt-3" style="width:500px;">
             <p>
@@ -31,8 +30,9 @@
             </p>
         </div>
     </div>
-    <h1 class="p-3 h4">titulo</h1>
-
+    <h1 class="p-3 h4">{{$post->post_title}}</h1>
+    <p>{{$post->post_message}}</p>
+    <hr class="hr-poster">
     <div class="card-body">
         <p>Curtido por
             <span>eeliana1</span> e
@@ -54,9 +54,8 @@
 
 
 </div>
-
+@endforeach
 <br>
-
 
 
 @include('footer')

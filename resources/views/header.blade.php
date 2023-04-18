@@ -33,8 +33,7 @@
 <body>
     <nav>
         <div class="row container m-auto">
-            <p style="font-size:24px;" class="display-4 col-6 mt-3"><a href="/"
-                    style="text-decoration:none; color:black;">SimplesVida</a></p>
+            <p style="font-size:24px;" class="display-4 col-6 mt-3"><a href="/" style="text-decoration:none; color:black;">SimplesVida</a></p>
 
             <p id="hamburguer" class="menu-topo-hamburguer col-6">|</p>
 
@@ -43,10 +42,10 @@
             <a href="/">
                 <li>Home</li>
             </a>
-            <a href="posteres">
+            <a href="/posteres">
                 <li>Posts</li>
             </a>
-            <a href="galeria">
+            <a href="/galeria">
                 <li>Galeria</li>
             </a>
         </ul>
