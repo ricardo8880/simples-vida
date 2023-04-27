@@ -18,6 +18,8 @@
     <!--CSS-->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/admin.css">
+
     <!---->
 
     <!--Jquery-->
@@ -42,7 +44,7 @@
             <a href="/">
                 <li>Home</li>
             </a>
-            <a href="/posteres">
+            <a href="/posts">
                 <li>Posts</li>
             </a>
             <a href="/galeria">

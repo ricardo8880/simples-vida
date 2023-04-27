@@ -13,7 +13,7 @@ class postercontroller extends Controller
     public function index()
     {
 
-        $postsHome = DB::select("select * from postagem");
+        $postsHome = DB::select("select * from postagem limit 4");
         return view('index', ['postsHome' => $postsHome]);
     }
 
@@ -72,12 +72,12 @@ class postercontroller extends Controller
         // $array2 = [$post_title, $post_message];
         // Estou juntando os array
         // $resultado = array_merge($array1, $array2);
-
+        $post_data = date("Y-m-d");
 
         DB::insert(
             "
-            INSERT INTO postagem (post_image, post_title, post_message )
-            VALUES ('$post_image', '$post_title', '$post_message');
+            INSERT INTO postagem (post_image, post_title, post_message, post_data)
+            VALUES ('$post_image', '$post_title', '$post_message', '$post_data');
             "
         );
         session()->flash('msg-cadastro-post', "Ricardo Seu post foi feito com sucesso!");
@@ -95,7 +95,7 @@ class postercontroller extends Controller
             select * from postagem
         ");
 
-        return view('posteres', ['Select_postagens' => $Select_postagens]);
+        return view('posts', ['Select_postagens' => $Select_postagens]);
     }
 
     public function pegarIDpost($id)

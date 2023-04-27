@@ -1,4 +1,30 @@
 @include('header')
+<div class="container-shorts">
+    <div class="container">
+        <iframe class="shorts" src="https://www.youtube.com/embed/X4VwzaQbdmM"
+            title="OS 3 ONIS MAIS FORTES DE DEMON SLAYER! - Kimetsu no Yaiba" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe class="shorts" src="https://www.youtube.com/embed/X4VwzaQbdmM"
+            title="OS 3 ONIS MAIS FORTES DE DEMON SLAYER! - Kimetsu no Yaiba" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe class="shorts" src="https://www.youtube.com/embed/X4VwzaQbdmM"
+            title="OS 3 ONIS MAIS FORTES DE DEMON SLAYER! - Kimetsu no Yaiba" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe class="shorts" src="https://www.youtube.com/embed/X4VwzaQbdmM"
+            title="OS 3 ONIS MAIS FORTES DE DEMON SLAYER! - Kimetsu no Yaiba" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe class="shorts" src="https://www.youtube.com/embed/X4VwzaQbdmM"
+            title="OS 3 ONIS MAIS FORTES DE DEMON SLAYER! - Kimetsu no Yaiba" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+    </div>
+
+</div>
 @foreach($Select_postagens as $postagem)
 <div class="card-post" style="margin:auto">
 
@@ -47,7 +73,8 @@
         <p class="card-text" style="cursor:pointer;"><small class="text-muted">Adicione um comentário...</small></p>
 
 
-        <h5 class="card-title"><a style="color:black; text-decoration:none;" href="">Ir para o Post
+        <h5 class="card-title"><a style="color:black; text-decoration:none;" href="/post/{{$postagem->id}}">Ir para o
+                Post
                 <ion-icon name="arrow-redo-circle-outline"></ion-icon>
             </a></h5>
     </div>

@@ -28,20 +28,19 @@ url('/img/banner-home-02.jpg'); height: 600px; background-size:cover; background
     <br>
     <hr style="border-top: solid black; width:7%;" class="m-auto">
     <br>
-    <p class="text-center alert alert-warning"><strong>Postagens Mais recentes</strong> <i
-            class="fa-solid fa-comment"></i></p>
+    <p class="text-center alert alert-warning"><strong>Postagens Mais recentes</strong> <i class="fa-solid fa-comment"></i></p>
 
 
     <div class="card-home container">
         @foreach($postsHome as $post)
         <div class="m-2" style="background-image: url('/img/card-home.jpg'); width: 250px; height: 250px;">
             <a href="">
-                <p>dddddd</p>
+                <p>{{Str::substr($post->post_title, 0, 20)}}</p>
             </a>
         </div>
         @endforeach
-
     </div>
 
+    <br>
 
     @include('footer')

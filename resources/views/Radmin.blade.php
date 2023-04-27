@@ -1,6 +1,13 @@
 @include('header')
 
 <div class="p-2">
+    <div class="admin-gallery">
+        <h2>Itens Admin</h2>
+        <ol>
+            <li><a href="/admingaleria"> &#10018; Gallery</a></li>
+        </ol>
+    </div>
+
     <!-- @if(!empty($productId))
     {{dd($productId)}}
     @endif -->

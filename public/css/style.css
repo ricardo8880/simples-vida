@@ -255,8 +255,6 @@ footer {
     width: 500px;
 }
 
-
-
 .gallery {
     width: 100%;
     max-width: 1200px;
@@ -314,3 +312,23 @@ footer {
 }
 
 /* Fim Litghtbox  */
+
+/* SHORTS */
+.container-shorts {
+    background-color: #2D3540;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.container-shorts .container {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.shorts {
+    width: 200px;
+    height: 300px;
+    border: solid thin black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px;
+}

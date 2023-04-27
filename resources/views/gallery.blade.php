@@ -7,67 +7,13 @@
 
 
     <div class="gallery contain">
+        @foreach($dadosGallery as $img)
         <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
+            <a href="gallery/{{$img->nomeImage}}" data-lightbox="roadtrip">
+                <img src="gallery/{{$img->nomeImage}}" class="card-img-top" alt="...">
             </a>
         </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-        <div class="gallery-item">
-            <a href="img/img-example.jpg" data-lightbox="roadtrip">
-                <img src="img/img-example.jpg" class="card-img-top" alt="...">
-            </a>
-        </div>
-
+        @endforeach
     </div>
 
     <!--Lightbox-->

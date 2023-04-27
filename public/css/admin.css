@@ -1,0 +1,29 @@
+.admin-gallery {
+    background: #65CAF1;
+    position: absolute;
+    width: 300px;
+    z-index: 1;
+    color: white;
+}
+
+.admin-gallery h2 {
+    text-align: center;
+    border-bottom: solid thin;
+    width: 80%;
+    margin: auto;
+}
+
+.admin-gallery ol {
+    padding: 10px;
+}
+
+.admin-gallery li {
+    border: solid;
+    list-style: none;
+    padding: 10px;
+}
+
+.admin-gallery a {
+    color: white;
+    text-decoration: none;
+}
